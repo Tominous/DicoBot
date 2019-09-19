@@ -11,7 +11,7 @@ const client = require("twilio")(accountSid, authToken);
 const MessagingResponse = require("twilio").twiml.MessagingResponse;
 
 app.use(express.static("public"));
-//.use(bodyParser.json());
+.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
     extended: false
